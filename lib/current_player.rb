@@ -4,10 +4,10 @@ def current_player(board)
     if ele.nil? == false
       counter += 1
     end
-    if counter = 1
-      return "X"
-    else
+    if counter % 2 == 0
       return "O"
+    else
+      return "X"
     end
   end
   return counter
