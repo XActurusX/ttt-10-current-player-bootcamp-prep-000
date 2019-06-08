@@ -1,14 +1,12 @@
-def current_player(board)
+def turn_count(board)
   counter = 0
   board.each do |ele|
-    if ele.nil? == false
+    if ele == "X" || ele == "O"
       counter += 1
-    end
-    if counter % 2 == 0
-      return "O"
-    else
-      return "X"
     end
   end
   return counter
 end
+
+
+ 
